@@ -1,0 +1,94 @@
+/* Faz a página não quebrar a largura */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+html {scroll-padding-top: 100px;}
+
+
+/* Fundo Principal */
+body {background: #40E0D0; margin: 0; padding: 0;}
+
+
+/* Fundo Secundario */
+main {position: relative; z-index: 1; background: white;
+max-width: 1200px; margin: -40px auto -20px;
+padding: 80px 40px 60px; border-radius: 12px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);}
+
+
+/* Barra de Cima */
+header {background-color: rgba(6, 46, 36, 0.85);
+backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+padding: 20px 40px; display: flex;
+justify-content: space-between; align-items: center;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+position: sticky; top: 0; z-index: 100;}
+
+nav ul {list-style: none;display: flex;gap: 30px;}
+header h1 {font-size: 28px; font-weight: 800; letter-spacing: -1px;}
+header nav a {color: white; text-decoration: none; margin-left: 32px;
+font-weight: 500; opacity: 0.8; transition: 0.2s;}
+header nav a:hover {opacity: 1; color: #00ff22;}
+
+
+/* Textos */
+body {font-family: Arial, Helvetica, sans-serif;}
+h1 {color:#ffffff;}
+
+main h1 {font-size: 42px; color: #062e24;
+text-align: center; margin-bottom: 16px;
+line-height: 1.2;}
+main p {font-size: 18px; color: #333;
+line-height: 1.6; max-width: 700px;
+margin: 0 auto 48px; text-align: center;}
+main h2 {font-size: 32px; color: #062e24;
+text-align: center; margin: 60px 0 40px;}
+
+
+/* Classe Principal */
+.principal {text-align: center;padding: 100px 20px;}
+.principal h2 {font-size: 48px; margin-bottom: 20px;}
+.principal p {font-size: 18px;color: #a0a8d0;}
+
+
+/* Classe Modulos */
+.Modulos {padding: 60px 40px;}
+.Modulos h2 {text-align: center;font-size: 32px;margin-bottom: 40px;}
+
+
+/* Classe Caixas */
+.Caixas {display: grid; grid-template-columns: 1fr 1fr 1fr;
+gap: 24px; max-width: 1200px; margin: 0 auto;}
+
+
+/* Classe Caixa */
+.Caixa {background: #1e3a34; color: white;
+padding: 18px 18px; border-radius: 16px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+transition: all 0.3s ease;
+border: 1px solid rgba(255, 255, 255, 0.1);
+display: block; text-decoration: none;}
+
+.Caixa:hover {transform: translateY(-8px);
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+background: #25463f;}
+
+.Caixa h3 {font-size: 24px; margin-bottom: 12px; color: white;}
+.Caixa p {color: #a7c4be; margin-bottom: 24px; text-align: left; margin-bottom: 0;}
+
+.Caixa button { background: #40E0D0;
+color: #062e24; border: none;
+padding: 12px 24px; border-radius: 8px;
+font-weight: bold; cursor: pointer;
+width: 100%; transition: 0.2s;}
+
+.Caixa button:hover {background: #5fffea; transform: scale(1.02);}
+
+/* Final */
+footer {background-color: #062e24; text-align: center;
+padding: 40px; margin-top: 0px;
+position: relative; z-index: 10; 
+box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);}
+footer p {margin-bottom: 16px; color: #ffffff;}
+footer a {color: #40E0D0;}
+footer a:hover {color: #00ff22}
