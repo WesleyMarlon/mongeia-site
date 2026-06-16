@@ -84,6 +84,29 @@ width: 100%; transition: 0.2s;}
 
 .Caixa button:hover {background: #5fffea; transform: scale(1.02);}
 
+
+/* Classe Coluna Dupla */
+.ColunaDupla {display: flex; gap: 60px;
+max-width: 1100px; margin: 80px auto;
+padding: 0 40px; align-items: flex-start;}
+
+.coluna {flex: 1; text-align: left;}
+.coluna h2 {font-size: 2rem; text-align: left;
+margin-bottom: 24px; color: #1a1a1a;}
+.coluna h3 {font-size: 1.25rem; margin-top: 28px; margin-bottom: 8px;}
+.coluna ul {list-style: none;padding: 0; margin: 0 0 24px 0;}
+.coluna li {margin-bottom: 12px; line-height: 1.6; padding-left: 24px; position: relative;}
+.coluna p {line-height: 1.7; margin-bottom: 16px;
+color: #333; font-size: 1rem; text-align: left;}
+.coluna li::before {content: "→"; position: absolute;
+left: 0; color: #2a5a4a; font-weight: bold;}
+.coluna code {background: #f1f1f1; padding: 2px 6px;
+border-radius: 4px;font-size: 0.9em;}
+
+@media (max-width: 768px) {.duas-colunas
+{flex-direction: column; gap: 40px;}}
+
+
 /* Final */
 footer {background-color: #062e24; text-align: center;
 padding: 40px; margin-top: 0px;
