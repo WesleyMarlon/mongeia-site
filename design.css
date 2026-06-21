@@ -86,6 +86,18 @@ background: #25463f;}
   color: #000; font-weight: 700;      
   padding: 2px 4px; border-radius: 2px;}
 
+.coluna :not(mark) > code, .coluna p > code, .coluna li > code {background: #e8e8e8;}
+
+main code {
+  background: #e8e8e8;
+  padding: 2px 6px; 
+  border-radius: 3px; 
+  font-family: 'Consolas', 'Monaco', monospace; 
+  font-size: 0.9em;}
+
+mark code, pre code, .Codigo code {
+  background: transparent; padding: 0;}
+
 .coluna h2 {font-size: 2rem; text-align: left;
   margin-bottom: 24px; color: #1a1a1a;}
 
@@ -107,15 +119,19 @@ background: #25463f;}
 
 .coluna strong {display: block; margin: 24px 0 12px 0; font-size: 1.1rem;}
 
-.coluna code {padding: 2px 6px; border-radius: 4px; font-size: 0.9em; background: #e8e8e8;}
+.coluna code {padding: 2px 6px; border-radius: 4px; font-size: 0.9em; background: transparent;}
 
 
-/* Classe Codigo - Bloco */
+/* Classe Codigo */
 .Codigo {background: #1e1e1e; border-radius: 8px;
-  margin: 20px auto; overflow-x: auto; max-width: 700px; padding: 16px;}
+margin: 20px auto; overflow-x: auto; max-width: 700px; 
+padding: 16px; color: #d4d4d4; 
+font-family: 'Consolas', 'Monaco', monospace; 
+font-size: 14px; line-height: 1.5; white-space: pre;}
 
-#Codigo {color: #d4d4d4; font-family: 'Consolas', 'Monaco', monospace; 
-  font-size: 14px; line-height: 1.5; white-space: pre;}
+/* Não sobreponha */
+.Codigo code {background: transparent; color: inherit;
+padding: 0; font-size: inherit; font-family: inherit;}
 
 
 /* Código inline geral */
