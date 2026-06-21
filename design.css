@@ -118,43 +118,45 @@ main h3 {
   max-width: 1400px; 
   margin: 20px auto 40px auto;
   padding: 0 20px; 
-  align-items: flex-start;
-}
+  align-items: flex-start;}
 
 .coluna {flex: 1; text-align: left;}
+.coluna mark {background-color: #3bff93;
+color: #000; font-weight: 700;      
+padding: 2px 4px; border-radius: 2px;}
 .coluna h2 {
   font-size: 2rem; 
   text-align: left;
   margin-bottom: 24px; 
-  color: #1a1a1a;
-}
+  color: #1a1a1a;}
+
 .coluna h3 {
-  font-size: 1.25rem; 
-  margin-top: 28px; 
-  margin-bottom: 8px;
-  color: #1a1a1a;
-}
+font-size: 1.25rem; 
+margin-top: 28px; 
+margin-bottom: 8px;
+color: #1a1a1a;}
+
 .coluna ul {list-style: none; padding: 0; margin: 0 0 24px 0;}
 .coluna li {
   margin-bottom: 12px; 
   line-height: 1.6; 
   padding-left: 24px; 
-  position: relative;
-}
+  position: relative;}
+
 .coluna li::before {
   content: "→"; 
   position: absolute;
   left: 0; 
   color: #2a5a4a; 
-  font-weight: bold;
-}
+  font-weight: bold;}
+
 .coluna p {
   line-height: 1.7; 
   margin-bottom: 16px;
   color: #333; 
   font-size: 1rem; 
-  text-align: left;
-}
+  text-align: left;}
+
 .coluna strong {
   display: block;
   margin: 24px 0 12px 0;
