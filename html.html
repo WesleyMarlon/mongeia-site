@@ -84,9 +84,11 @@
                 <p>Apenas com isso você pode ir nos seus arquivos e abrir esse "File" com seu navegador e pimba "Tela Branca".<br> 
                 Eu prometi te ensinar a fazer um site e aí está. Mas em nenhum momento eu falei que ele estaria completo.</p>
                 <p>O que você acabou de fazer é uma "página em branco" que você vai precisar "escrever" ou até "desenhar" nela.</p>
-                <p>Esse código que você viu foi feito 100% em código, ele não é png, bonito não é? Não.
-                    Eu poderia ter feito ele muito melhor, ter deixado algumas palavras em verde e outras em azul.<br>
-                    Mas eu não quis. Isso é para te mostrar que a qualidade de algo que você faz depende 100% de você e não do programa.
+                <p>Esse código que você viu foi feito 100% em programação, ele não é png, bonito, não é? Não.
+                    Eu poderia ter feito ele muito melhor, ter deixado algumas palavras em verde e outras em azul.
+                     Além de que no celular ele nem aparece por completo, tem que arrastar pro lado pra ver ele inteiro.</p>
+                <p>Mas eu não quis fazer esses detalhes. Pois isso é para te mostrar que a qualidade de algo que você 
+                faz depende 100% de você e não do programa. Nada é feito de forma automática, se fosse assim, não existiriam programadores.
                 </p>
             </div>
 
@@ -108,6 +110,109 @@
                     <li>Os outros títulos como o "O que é HTML" são "h2", eles ainda são títulos, 
                         mas não são os principais e por isso são "h2" e não "h1".</li>
                 </ul>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <table class="TabelaPadrão">
+                    <caption>Códigos Principais (HTML)</caption>
+                    <thead>
+                        <tr>
+                            <th>Tag</th><th>O que é</th><th>Quando/Como usar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;p&gt;</code></td>
+                            <td>Parágrafo. "Print" do HTML</td>
+                            <td>Todo bloco de texto corrido</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;h1&gt;</code> ao <code>&lt;h6&gt;</code></td>
+                            <td>Títulos por hierarquia</td>
+                            <td>1x h1 por página, resto pra subtítulo</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;br&gt;</code></td>
+                            <td>Quebra de linha forçada</td>
+                            <td>Só em endereço, poesia. Nunca pra espaço</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;hr&gt;</code></td>
+                            <td>Linha de mudança temática</td>
+                            <td>Separar assuntos diferentes</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;ul&gt;</code></td>
+                            <td>Cria lista não ordenada</td>
+                            <td>Criar uma lista sem numeração</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;ol&gt;</code></td>
+                            <td>Cria lista ordenada</td>
+                            <td>Criar uma lista com numeração</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;li&gt;</code></td>
+                            <td>Textos das listas</td>
+                            <td>Usado em conjunto com as listas. Dentro delas</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;img&gt;</code></td>
+                            <td>Coloca uma imagem</td>
+                            <td>Faça uma pasta "imagens" em conjunto com a "File" em que está programando.
+                             As imagens da pasta poderão ser usadas</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;a&gt;</code></td>
+                            <td>Manda o usuário pra pagina linkada</td>
+                            <td>Coloque um link e o usuário será direcionado. Caso não queira que o 
+                                link substitua sua página é só colocar: <code>&lt;a&gt; target="_blank" href=""&lt;&gt;/a&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;link&gt;</code></td>
+                            <td>Conecta o seu Html com um arquivo</td>
+                            <td>Normalmente sendo usado somente para conectar seu <code>arquivo.html</code> no seu <code>arquivo.css</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="ColunaDupla">
+            <div class="coluna">
+                <h2>Tabela</h2>
+                <p>Olha a tabela, que coisa linda.</p>
+                <p>Todos esses códigos sitados representam 80% do que você vai usar. Isso vale pra maioria das matérias de 
+                programação que você vai estudar. A maioria das coisas são compostas de 5 coisas que você usa em 80% dos casos e 
+                30 coisas que você usa em 20% dos casos.</p>
+                <p>Eu não quero ficar relativisando a programação. Todas os códigos são úteis, mas tem uns que você 
+                vai usar bem mais do que os outros e está tudo bem. Eu só acharia errado se eu tentasse pegar o seu tempo 
+                para te ensinar algo que você só usaria em 20% dos casos sem te avisar que você só vai usar em 20% dos casos.</p>
+                <p>Tudo isso que estou passando é apenas teoria. A prática é com você. Não tem como eu te dar todos os detalhes 
+                    possíveis, existem coisas que só são aprendidas com experiência. Por isso, vai lá, testa e tire suas próprias 
+                    conclusões.
+                </p>
+            </div>
+
+            <div class="coluna">
+                <h2>Como fazer a Tabela</h2>
+                <p>Não é difícil, olhe e aprenda:</p>
+                <pre class="Codigo"><code id="Codigo">
+1   &lt;table&gt; &lt;!-- Base de tudo --&gt;
+2       &lt;thead&gt; &lt;!-- Parte de cima --&gt;
+3           &lt;tr&gt; &lt;!-- Cria as caixas --&gt;
+4               &lt;th&gt;&lt;/th&gt; &lt;!-- Onde coloca os textos --&gt;
+5           &lt;/tr&gt;
+6       &lt;/thead&gt;
+7       &lt;tbody&gt; &lt;!-- Parte de baixo, alinha com a de cima --&gt;
+8           &lt;tr&gt;
+9               &lt;th&gt;&lt;/th&gt;
+10           &lt;/tr&gt;
+11       &lt;/tbody&gt;
+12  &lt;/table&gt;</code></pre>
             </div>
         </section>
     </main>
