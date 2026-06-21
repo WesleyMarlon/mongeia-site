@@ -86,7 +86,9 @@ background: #25463f;}
   color: #000; font-weight: 700;      
   padding: 2px 4px; border-radius: 2px;}
 
-.coluna :not(mark) > code, .coluna p > code, .coluna li > code {background: #e8e8e8;}
+.coluna p > code, .coluna li > code, 
+.coluna h1 > code, .coluna h2 > code, 
+.coluna h3 > code {background: #e8e8e8;}
 
 main code {
   background: #e8e8e8;
@@ -118,8 +120,6 @@ mark code, pre code, .Codigo code {
   color: #333; font-size: 1rem; text-align: left;}
 
 .coluna strong {display: block; margin: 24px 0 12px 0; font-size: 1.1rem;}
-
-.coluna code {padding: 2px 6px; border-radius: 4px; font-size: 0.9em; background: transparent;}
 
 
 /* Classe Codigo */
