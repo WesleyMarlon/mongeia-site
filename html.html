@@ -93,23 +93,23 @@
             </div>
 
             <div class="coluna">
-                <h2>Primeiro "Hello World"</h3>
-                <p>Tudo que é aberto é fechado automaticamente. Se apertar "p" e enter o VsCode entende que você está tentando 
-                    puxar a função &lt;p&gt; e finaliza com &lt;/p&gt;.</p>
-                <p>A função "p" seria o print do html.  Se quiser pode começar com o básico. 
-                    Coloque um &lt;p&gt;Hello World&lt;/p&gt; dentro do seu &lt;body&gt;. 
-                    Mas a real é que você não precisa do "p" para fazer isso. Ele serve mais para você declarar para os 
-                    servidores que isso tudo que você está escrevendo dentro do "p" é texto.</p>
-                <p>Além de que... não quero dar spoilers, mas... faça questão de declarar o que é cada coisa.
-                    Isso vai te ajudar a configurar seu site depois. Se algo é texto, use o "p" e se algo é título use 
-                    o "h1", "h2" e etc, olha aí mais um código pra testar.</p>
-                <p>Na verdade, vou te mostrar na prática, vem comigo:</p>
-                <ul>
-                    <li>O título dessa página, aquele "HTML: A estr..." ele é o título principal e 
-                        por isso ele é o "h1" da página.</li>
-                    <li>Os outros títulos como o "O que é HTML" são "h2", eles ainda são títulos, 
-                        mas não são os principais e por isso são "h2" e não "h1".</li>
-                </ul>
+                <h2>Desmembrando código</h3>
+                <p><mark><code>&lt;!DOCTYPE&gt;</code></mark>
+                Aviso na porta: "Aqui é documento HTML 5". Não apague isso. Sem isso o navegador entra em "modo estranho".</p>
+                <p><mark><code>&lt;html lang="en"&gt;</code></mark>
+                Língua do site. Coloca lang="pt-br". Se apagar isso seu navegador nem identifica em que língua está.</p>
+                <p><mark><code>&lt;head&gt;</code></mark>
+                Cérebro do site. Usuário não vê essa parte. Não deve ser apagado por nada. Ele é uma das bases.</p>
+                <p><mark><code>&lt;meta charset="UTF-8"&gt;</code></mark>
+                Tradutor de acentos. Só apague caso não vá usar ç e os acentos.</p>
+                <p><mark><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></mark>
+                Faz funcionar no celular. Não apague, mesmo que a ideia seja funcionar só no pc.</p>
+                <p><mark><code>&lt;title&lt;Document&gt;/title&gt;</code></mark>
+                Nome da aba. O que aparece lá em cima no Chrome. Não apague.</p>
+                <p><mark><code>&lt;body&gt;</code></mark>
+                Ele é a base de tudo. Todo o conteúdo vai vir aqui. Tudo que o usuário vê estará aqui. Não apague.</p>
+                <p>Por fim, tudo que é aberto, deve ser fechado. 90% das coisas ficaram dentro do html e nele algumas ficaram 
+                    dentro do head, enquanto no body 95% das coisas que for colocar estarão nele.</p>
             </div>
         </section>
 
@@ -192,14 +192,38 @@
                 vai usar bem mais do que os outros e está tudo bem. Eu só acharia errado se eu tentasse pegar o seu tempo 
                 para te ensinar algo que você só usaria em 20% dos casos sem te avisar que você só vai usar em 20% dos casos.</p>
                 <p>Tudo isso que estou passando é apenas teoria. A prática é com você. Não tem como eu te dar todos os detalhes 
-                    possíveis, existem coisas que só são aprendidas com experiência. Por isso, vai lá, testa e tire suas próprias 
-                    conclusões.
-                </p>
+                    possíveis, existem coisas que só são aprendidas com experiência.</p> 
+                <p>Por isso, vai lá, testa e tire suas próprias conclusões. Se você quiser aprender de verdade, você vai 
+                    ter que praticar e muito. Tente fazer algo simples. Claro, não vai ficar igual ao meu ou aos outros sites.
+                    Isso é completamente normal, pois não usamos somente o Html, usamos o Css para dar aparência ao site e até Js para 
+                dar funções a ele.</p>
             </div>
 
             <div class="coluna">
-                <h2>Como fazer a Tabela</h2>
-                <p>Não é difícil, olhe e aprenda:</p>
+                <h2>Primeiro "Hello World"</h3>
+                <p>Tudo que é aberto é fechado automaticamente. Se apertar "p" e enter o VsCode entende que você está tentando 
+                    puxar a função &lt;p&gt; e finaliza com &lt;/p&gt;.</p>
+                <p>A função "p" seria o print do html.  Se quiser pode começar com o básico. 
+                    Coloque um &lt;p&gt;Hello World&lt;/p&gt; dentro do seu &lt;body&gt;. 
+                    Mas a real é que você não precisa do "p" para fazer isso. Ele serve mais para você declarar para os 
+                    servidores que isso tudo que você está escrevendo dentro do "p" é texto.</p>
+                <p>Faça questão de declarar o que é cada coisa.
+                    Isso vai te ajudar a configurar seu site depois. Se algo é texto, use o "p" e se algo é título use 
+                    o "h1", "h2" e etc, olha aí mais um código pra testar.</p>
+                <p>Na verdade, vou te mostrar na prática, vem comigo:</p>
+                <ul>
+                    <li>O título dessa página, aquele "HTML: A estr..." ele é o título principal e 
+                        por isso ele é o "h1" da página.</li>
+                    <li>Os outros títulos como o "O que é HTML" são "h2", eles ainda são títulos, 
+                        mas não são os principais e por isso são "h2" e não "h1".</li>
+                    <li>Todos os textos dessa página estão em "p".</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="ColunaDupla">
+            <div class="coluna">
+                <h2>Código da Tabela</h2>
                 <pre class="Codigo"><code id="Codigo">
 1   &lt;table&gt; &lt;!-- Base de tudo --&gt;
 2       &lt;thead&gt; &lt;!-- Parte de cima --&gt;
@@ -213,6 +237,17 @@
 10           &lt;/tr&gt;
 11       &lt;/tbody&gt;
 12  &lt;/table&gt;</code></pre>
+            </div>
+
+            <div class="coluna">
+                <h2>Como fazer uma Tabela</h2>
+                <p>Vou ser curto e direto. Não, ela não vai ficar igual as tabelas comuns e nem igual a minha.
+                    Isso acontece pois eu usei do Css para dar aparência a ela.</p>
+                <p>Consegue ver a importância do Css? Sem ele seu site e até mesmo essa tabela fica parecendo com a de 
+                    um site dos anos 2000.</p>
+                <p>As "tags", "o que é" e etc ficam dentro do thead. Enquanto as informações ficam abaixo no tbody.</p> 
+                <p>Cada caixa é única e por causa disso: Sim, você vai precisar fazer várias caixas (tr) com cada uma 
+                    tendo seus textos (th) dentro.</p>
             </div>
         </section>
     </main>
