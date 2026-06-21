@@ -95,84 +95,39 @@ background: #25463f;}
 
 .coluna ul {list-style: none; padding: 0; margin: 0 0 24px 0;}
 
-.coluna li {
-  margin-bottom: 12px; 
-  line-height: 1.6; 
-  padding-left: 24px; 
-  position: relative;
-}
+.coluna li {margin-bottom: 12px; line-height: 1.6; 
+  padding-left: 24px; position: relative;}
 
-.coluna li::before {
-  content: "→"; 
-  position: absolute;
-  left: 0; 
-  color: #2a5a4a; 
-  font-weight: bold;
-}
+.coluna li::before {content: "→"; 
+  position: absolute; left: 0; 
+  color: #2a5a4a; font-weight: bold;}
 
-.coluna p {
-  line-height: 1.7; 
-  margin-bottom: 16px;
-  color: #333; 
-  font-size: 1rem; 
-  text-align: left;
-}
+.coluna p {line-height: 1.7; margin-bottom: 16px;
+  color: #333; font-size: 1rem; text-align: left;}
 
-.coluna strong {
-  display: block;
-  margin: 24px 0 12px 0;
-  font-size: 1.1rem;
-}
+.coluna strong {display: block; margin: 24px 0 12px 0; font-size: 1.1rem;}
 
-.coluna code {
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 0.9em;
-  background: #e8e8e8;
-}
+.coluna code {padding: 2px 6px; border-radius: 4px; font-size: 0.9em; background: #e8e8e8;}
 
 
 /* Classe Codigo - Bloco */
-.Codigo {
-  background: #1e1e1e; 
-  border-radius: 8px;
-  margin: 20px auto; 
-  overflow-x: auto;
-  max-width: 700px;
-  padding: 16px;
-}
+.Codigo {background: #1e1e1e; border-radius: 8px;
+  margin: 20px auto; overflow-x: auto; max-width: 700px; padding: 16px;}
 
-#Codigo {
-  color: #d4d4d4; 
-  font-family: 'Consolas', 'Monaco', monospace;
-  font-size: 14px; 
-  line-height: 1.5;
-  white-space: pre;
-}
+#Codigo {color: #d4d4d4; font-family: 'Consolas', 'Monaco', monospace; 
+  font-size: 14px; line-height: 1.5; white-space: pre;}
 
 
 /* Código inline geral */
-code {
-  background: #e8e8e8;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-family: 'Consolas', 'Monaco', monospace;
-  font-size: 0.9em;
-}
+code {background: #e8e8e800; padding: 2px 6px; border-radius: 3px; 
+  font-family: 'Consolas', 'Monaco', monospace; font-size: 0.9em;}
 
 
 /* Blocos pre gerais */
-pre {
-  background: #1e1e1e;
-  color: #d4d4d4;
-  padding: 16px;
-  border-radius: 8px;
-  overflow-x: auto;
-  font-family: 'Consolas', 'Monaco', monospace;
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 20px 0;
-}
+pre {background: #1e1e1e; color: #d4d4d4;
+  padding: 16px; border-radius: 8px;
+  overflow-x: auto; font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 14px; line-height: 1.5; margin: 20px 0;}
 
 
 /* TabelaPadrão */
