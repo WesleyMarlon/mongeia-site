@@ -178,6 +178,10 @@ footer p {margin-bottom: 16px; color: #ffffff;}
 footer a {color: #40E0D0;}
 footer a:hover {color: #00ff22;}
 
+/* Link */
+a {color: #2c978c;}
+a:hover {color: #01a117;}
+
 
 /* MOBILE */
 @media (max-width: 768px) {.ColunaDupla {
