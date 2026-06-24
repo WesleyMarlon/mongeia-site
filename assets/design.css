@@ -170,7 +170,7 @@ caption {text-align: center;
 
 /* TabelaNivel */
 .TabelaNivel {width: 70%; border-collapse: collapse;
-  margin: 24px auto; font-size: 18px;}
+  margin: 24px auto; font-size: 16px; font-weight: bold;}
 
 caption {text-align: center; 
   font-size: 20px; padding: 12px; 
