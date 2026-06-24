@@ -167,6 +167,7 @@ caption {text-align: center;
 .TabelaPadrão tbody tr:nth-child(even) {background-color: #fafafa;}
 .TabelaPadrão tbody tr:hover {background-color: #f0f0f0;}
 
+
 /* TabelaNivel */
 .TabelaNivel {width: 70%; border-collapse: collapse;
   margin: 24px auto; font-size: 14px;}
@@ -183,10 +184,11 @@ caption {text-align: center;
 .TabelaNivel th, .TabelaNivel td {
   border: 1px solid #ccc; padding: 12px 16px; text-align: center;}
 
-.TabelaNivel th {background-color: #f5f5f5; font-weight: 600; font-size: 18px;}
+.TabelaNivel th {background-color: #f5f5f5; font-weight: 600;}
 
 .TabelaNivel tbody tr:nth-child(even) {background-color: #fafafa;}
 .TabelaNivel tbody tr:hover {background-color: #f0f0f0;}
+
 
 /* Final */
 footer {background-color: #062e24; text-align: center; 
