@@ -170,7 +170,7 @@ caption {text-align: center;
 
 /* TabelaNivel */
 .TabelaNivel {width: 70%; border-collapse: collapse;
-  margin: 24px auto; font-size: 14px;}
+  margin: 24px auto; font-size: 18px;}
 
 caption {text-align: center; 
   font-size: 20px; padding: 12px; 
@@ -178,7 +178,7 @@ caption {text-align: center;
   color: #ffffff;}
 
 .TabelaNivel thead th {background-color: #2a5e5b;
-  color: #ffffff; text-align: center; 
+  color: #ffffff; text-align: center;
   padding: 12px 16px; border: 1px solid #ccc;}
 
 .TabelaNivel th, .TabelaNivel td {
