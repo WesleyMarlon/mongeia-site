@@ -204,10 +204,6 @@ footer a:hover {color: #00ff22;}
 a {color: #2c978c;}
 a:hover {color: #01a117;}
 
-/* mark */
-mark {color: #00ff22;}
-mark:hover {color:#2c978c;}
-
 
 /* MOBILE */
 @media (max-width: 768px) {.ColunaDupla {
