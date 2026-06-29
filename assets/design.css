@@ -15,7 +15,7 @@ margin: -40px auto -20px; padding: 80px 40px 60px;
 border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);}
 
 
-/* Barra de Cima */
+/* Cabeçalho */
 header {background-color: rgba(6, 46, 36, 0.85);
 backdrop-filter: blur(12px); 
 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -190,7 +190,7 @@ caption {text-align: center;
 .TabelaNivel tbody tr:hover {background-color: #f0f0f0;}
 
 
-/* Final */
+/* footer */
 footer {background-color: #062e24; text-align: center; 
   padding: 40px; margin-top: 0px; 
   position: relative; z-index: 10; 
