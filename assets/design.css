@@ -48,9 +48,9 @@ text-align: left; margin: 60px 0 40px;}
 
 main h3 {font-size: 26px; color: #333; margin-top: 20px;}
 
-/* Dectails */
-summary {color: #40E0D0;}
-summary:hover {color: #00ff22;}
+/* Details */
+details {color: #40E0D0;}
+details:hover {color: #00ff22;}
 
 
 /* Classe Modulos */
