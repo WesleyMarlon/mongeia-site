@@ -191,6 +191,17 @@
                             <th>Painel</th>
                             <th>Agrupa <code>h1</code> até <code>h6</code> quando tem subtítulo.</th>
                         </tr>
+                        <tr>
+                            <th><code>&lt;details&gt;</code></th>
+                            <th>Lista</th>
+                            <th>Ele cria o conteúdo que abre/fecha sem precisar do <code>JS</code>. 
+                                Ele é o "ver mais" nativo do HTML.</th>
+                        </tr>
+                        <tr>
+                            <th><code>&lt;summary&gt;</code></th>
+                            <th>Puxador</th>
+                            <th>É o título clicável do <code>details</code>. Ele sempre fica dentro dele.</th>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -210,9 +221,29 @@
             </div>
 
             <div class="coluna">
-                <h2>Conclusão</h2>
-                <p></p>
+                <h2>Código do <code>Details + Summary</code></h2>
+                <pre class="Codigo"><code>
+1   &lt;details&gt; &lt;!-- Base de tudo --&gt;
+2       &lt;summary&gt; &lt;!-- Título clicável --&gt;
+3           &lt;!-- Tudo isso abaixo fica escondido --&gt;
+4           &lt;p&gt;Introdução - HTML&lt;/p&gt;
+5           &lt;p&gt;Intermediário - HTML&lt;/p&gt;
+6   &lt;/details&gt;</code></pre>
             </div>
+        </section>
+
+        <section class="Principal">
+                <h2>Conclusão</h2>
+                <p class="Principal-Texto">Aqui finaliza o nível intermediário de HTML.</p>
+                <p class="Principal-Texto">Nessa página foi tratado apenas sobre organização de código.
+                Isso é difícil? Como pode ver, não. Entretanto, são regras que vai levar um tempo para memorizar.<br>
+                Obrigado por ter ficado até aqui. Agora você não tem apenas a base, você a estrutura do HTML. 
+                Juntando isso com a introdução do CSS você já vai ser capaz de criar um site simples.</p>
+                <p class="Principal-Texto">Que tal finalizar isso com um <code>Details + Summary</code>? <details>
+                    <summary>Sumário</summary>
+                        <p><a href="/mongeia-site/html/introducao.html">Introdução - HTML</a></p>
+                        <p><a href="/mongeia-site/html/intermediario.html">Intermediário - HTML</a></p>
+                </details></p>
         </section>
     </main>
 
