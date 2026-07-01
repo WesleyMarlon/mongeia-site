@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução - CSS</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/mongeia-site/imagens/logo.mongeia.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/mongeia-site/imagens/logo.mongeia.apple.png">
+    <meta name="description" content="Aprenda programação de forma rápida e fácil.">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Mongeia</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/mongeia-site/">Inicio</a></li>
+                <li><a href="/mongeia-site/pages/frontend.html">Frontend</a></li>
+                <li><a href="">Backend</a></li>
+                <li><a href="">DBA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="Principal">
+            <h2>CSS: A aparência do site</h2>
+            <p class="Principal-Texto">
+                A área de navegação de fato é a área da programação com o início mais fácil de todos. 
+                Talvez perca somente para o <code>Python</code> em relação a early game fácil. 
+                Se você escolheu essa área e ainda não tem pelo menos a <a href="mongeia-site/html/introducao.html">Introdução do HTML</a>. Sim, 
+                de fato estou te expulsando. Não por mal. Mas se você não tiver a base do HTML, tudo que for aprender não servirá de nada. 
+                Tentar aprender CSS primeiro que HTML é igual querer pintar uma casa sem ter paredes. Entende agora porque não funciona?
+            </p>
+        </section>
+
+        <section class="ColunaDupla">
+            <div class="coluna">
+                <h2>O que é CSS?</h2>
+                <p>Enquanto o HTML são a estrutura da casa. O CSS é a parte estética.</p>
+                <p>Sem o CSS esse site seria feio. Mas não é "feinho". Ele seria HORROROSO. Quer que eu prove? Pois bem: 
+                    <a href="">Esse mesmo site, mas sem CSS</a>. Se clicou, você viu o quão feio é sem CSS.</p>
+                <p>CSS é toda a aparência: cor, tamanho, posição, fonte, espaçamento. 
+                    HTML é o esqueleto. CSS é a roupa, o corte de cabelo e a postura.</p>
+                <p>Não se esqueça. HTML funciona sem CSS, mas CSS não funciona sem HTML. 
+                    Porque o CSS precisa de um &lt;button&gt; pra pintar, de um &lt;div&gt; pra centralizar. 
+                    Sem HTML, o CSS fica sem emprego.</p>
+            </div>
+
+            <div class="coluna">
+                <h2>Como começar?</h2>
+                <p>Quer saber o começo do começo? Volta na introdução do HTML.</p>
+                <p>Aqui você só precisa saber fazer uma coisa que é: Linkar o CSS no HTML. Como fazer isso? Muito simples:</p>
+                <ul>
+                    <li>Cria um "file.css" no mesmo folder que está seu HTML.</li>
+                    <li>Escreve <code>link</code> dentro do <code>head</code> e dá um <code>Enter</code></li>
+                    <li>Agora aperta <code>Ctrl + Espaço</code> e seleciona o arquivo que está seu <code>CSS</code></li>
+                    <li>Fazendo isso, você vai gerar um <code>&lt;link rel="stylesheet" href="file.css"&gt;</code></li>
+                </ul>
+                <p>Pronto, agora tudo que configurar no CSS vai ir para o HTML.</p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <table class="TabelaPadrão">
+                    <caption>Códigos Principais (CSS)</caption>
+                    <thead>
+                        <tr>
+                            <th>Tags</th><th>O que é</th><th>Quando/Como usar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>color</code></td>
+                            <td>Cor de texto</td>
+                            <td>h1 { color: #1a1a1a; }</td>
+                        </tr>
+                        <tr>
+                            <td><code>background</code></td>
+                            <td>Cor de fundo</td>
+                            <td>body { background: #f5f5f5; }</td>
+                        </tr>
+                        <tr>
+                            <td><code>font-size</code></td>
+                            <td>Tamanho letra</td>
+                            <td>p { font-size: 16px; }</td>
+                        </tr>
+                        <tr>
+                            <td><code>font-family</code></td>
+                            <td>Fonte</td>
+                            <td>body { font-family: Arial; }</td>
+                        </tr>
+                        <tr>
+                            <td><code>margin</code></td>
+                            <td>Espaço fora</td>
+                            <td>section { margin-bottom: 40px; }</td>
+                        </tr>
+                        <tr>
+                            <td><code>padding</code></td>
+                            <td>Espaço dentro</td>
+                            <td>button { padding: 12px 24px; }</td>
+                        </tr>
+                        <tr>
+                            <td><code>width</code></td>
+                            <td>Largura</td>
+                            <td>body { width: 1200px; }</td>
+                        </tr>
+                        <tr>
+                            <td><code>height</code></td>
+                            <td>Altura</td>
+                            <td>body { height: 100%; }</td>
+                        </tr>
+                        <tr>
+                            <td><code>display</code></td>
+                            <td>Comportamento</td>
+                            <td>display: block; display: flex; display: none;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>flex</code></td>
+                            <td>Alinhar</td>
+                            <td>nav { display: flex; justify-content: space-between; }</td>
+                        </tr>
+                        <tr>
+                            <td><code>border</code></td>
+                            <td>Borda</td>
+                            <td>input { border: 1px solid #ccc; }</td>
+                        </tr>
+                        <tr>
+                            <td><code>text-align</code></td>
+                            <td>Alinhar texto</td>
+                            <td>h1 { text-align: center; }</td>
+                        </tr>
+                        <tr>
+                            <td><code>box-sizing</code></td>
+                            <td>Box model</td>
+                            <td>* { box-sizing: border-box; }</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="ColunaDupla">
+            <div class="coluna">
+                <h2>CSS vs HTML</h2>
+                <p>Entende agora o motivo de eu ter falado que essa aula só vale para quem tem uma boa base de HTML?</p>
+                <p>Se você estudou HTML, você já sabe o que é um <code>h1</code>. Pois é assim que o CSS trabalha. 
+                    O CSS não anda sozinho, ele é totalmente dependente do HTML. Quer um exemplo prático? 
+                    Meu <code>footer</code> está literalmente assim no CSS:</p>
+                <pre class="Codigo"><code>
+1   footer {background-color: #062e24; text-align: center;
+2   padding: 40px; margin-top: 0px;
+3   position: relative; z-index: 10;
+4   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);}
+5           
+6   footer p {margin-bottom: 16px; color: #ffffff;}
+7   footer a {color: #40E0D0;}
+8   footer a:hover {color: #00ff22;}</code></pre>
+            </div>
+
+            <div class="coluna">
+                <h2>Geral</h2>
+                <p>Olhando a coluna ao lado e o contexto todo, você deve ter percebido algumas coisas:</p>
+                <ul>
+                    <li>CSS não anda sem o HTML. Mas usar HTML sem CSS é loucura.</li>
+                    <li>CSS é simples e complexo ao mesmo tempo. Ele usa de uma sintaxe complexa. 
+                        Você simplesmente pega o que quer e configura.</li>
+                    <li>CSS ao mesmo tempo é muito complexo. Olha a quantidade de configurações que eu fiz 
+                        para deixar o meu "rodapé" assim.</li>
+                </ul>
+                <p>Os códigos que eu usei no footer eu nem sequer expliquei ainda. Pois essa página é para a 
+                    introdução e não para o nível intermediário.</p>
+                <p>Se você usar somente isso que eu te passei a sua página não vai ficar igual a minha... 
+                    Com exceção do footer. Se copiar, colar e organizar, provavelmente fica igual.</p>
+            </div>
+        </section>
+
+        <section class="Principal">
+                <h2>Conclusão</h2>
+                <p class="Principal-Texto">Aqui finaliza a introdução do CSS.</p>
+                <p class="Principal-Texto">"Mas já? O HTML foi bem maior". Sim, pois na introdução do HTML foi falado 
+                    sobre a base da navegação. Já nessa aula por já ter essa base, eu não preciso repetir de novo.<br>
+                Obrigado por ter ficado até aqui. Agora tendo essa base do CSS e o nível intermediário do HTML você já 
+                vai conseguir fazer sites simples. Claro, desde que você pratique. Você deve testar os códigos que aprendeu.</p>
+                <p class="Principal-Texto">No final das contas para mim isso é apenas um bloco de notas. Mas para você isso pode ser 
+                    uma aula do qual deve memorizar caso queira aprender algo. Eu sei fazer o que está aqui, mas você? Sabe? Por isso, 
+                    estude e que tal alguma hora ir para o <a href="/mongeia-site/css/intermediario.css.html">próximo nível?</a></p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <address>
+            <p>&copy; 2026 WesleyDev</p>
+            <p>
+                <a target="_blank" href="https://github.com/WesleyMarlon" rel="author noopener">GitHub</a>
+            </p>
+        </address>
+    </footer>
+</body>
+</html>
