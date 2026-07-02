@@ -36,22 +36,23 @@ header nav a:hover {opacity: 1; color: #00ff22;}
 /* Texto */
 .Texto {
     text-align: center;
-    padding: 40px 20px 60px;
+    padding: 40px 20px 40px;
 }
 
 .Texto h2 {
     font-size: 36px; 
-    color: #062e24;
-    margin: 0 auto 24px;
+    color: #000000;
+    margin: 0 auto 20px;
+    text-align: center;
     line-height: 1.2; 
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 .Texto p {
     font-size: 18px; 
-    color: #333;
+    color: #000000;
     line-height: 1.7; 
-    max-width: 700px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -85,8 +86,8 @@ main h3 {
 }
 
 /* Details */
-details {color: #40E0D0;}
-details:hover {color: #00ff22;}
+details {color: #2ca094; text-align: left; font-size: 18px; line-height: 1.7;}
+details:hover {color: #05a019;}
 
 
 /* Classe Modulos */
@@ -241,7 +242,7 @@ footer a {color: #40E0D0;}
 footer a:hover {color: #00ff22;}
 
 /* Link */
-a {color: #2c978c;}
+a {color: #2ca094;}
 a:hover {color: #01a117;}
 
 
