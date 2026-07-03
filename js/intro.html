@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução - JS</title>
+    <link rel="stylesheet" href="../assets/design.css">
+    <link rel="icon" href="..assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.mongeia.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/logo.mongeia.apple.png">
+    <meta name="description" content="Aprenda programação de forma rápida e fácil.">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Mongeia</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="../pages/frontend">Frontend</a></li>
+                <li><a href="../pages/updates">Backend</a></li>
+                <li><a href="../pages/updates">DBA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="Texto">
+            <h2>JS: O cérebro do site</h2>
+            <p>
+                Nesse momento a área de navegação começa a ficar "complexo". Eu não vou te esconder nada. 
+                Estamos no <code>JavaScript</code> agora e ele com certeza não é tão fácil quanto <code>HTML + CSS</code>.</p>  
+            <p>
+                Eu não quero que pense que programação é algo de outro nível. Mas eu tenho que deixar claro que existem áreas da 
+                programação que não são tão fáceis e o JS é uma delas. Ele é diferente, pois ao contrário do HTML que é uma linguagem de 
+                marcação e o CSS que é uma linguagem de estilo. O JS é uma linguagem de programação.</p>
+            <p>
+                Mas fique tranquilo que não vai ser difícil. Mas lembre-se, estamos na parte da <code>navegação</code> e aqui o conteúdo vai 
+                ser voltado a isso. Eu vou te ensinar tudo do JS? Sim, mas em partes. Aqui vai ser a parte de navegação. Já na parte do 
+                <a href="../pages/updates">Backend</a> vai ser ensinado as partes mais técnicas do JavaScript.</p>
+        </section>
+
+        <section class="ColunaDupla">
+            <div class="coluna">
+                <h2>O que é JS?</h2>
+                <p>O JavaScript é o que faz seu site deixar de ser uma revista e se transformar em um app web.</p>
+                <p>Um site funciona sem JS? Sendo honesto. Sim, mas depende. O YouTube, por exemplo, ele não funciona sem JS 
+                    e isso não é um exagero. Ele NÃO FUNCIONA sem JS. O HTML roda sozinho, mas fica melhor com CSS.</p>
+                <p>Um site só se torna um "site de verdade" quando tem JavaScript nele. Ainda mais quando é programado de forma excelente. 
+                    Nesse caso esqueça, não tem como um site só com HTML e CSS se comparar a um que tem um JS bem programado.</p>
+            </div>
+
+            <div class="coluna">
+                <h2>O que o JS faz na prática?</h2>
+                <p>Ele não faz uma coisa e sim várias:</p>
+                <ul>
+                    <li><strong>Interatividade: </strong>Abrir/fechar menu, curtir post, validar senha no formulário antes de enviar.</li>
+                    <li><strong>Atualizar conteúdo: </strong>Carrossel de imagens, feed do Instagram, "carregar mais". 
+                        Busca em tempo real enquanto você digita. Carrinho de compras que atualiza o total na hora.</li>
+                    <li><strong>Reagir ao usuário: </strong>Dark mode, arrastar e soltar arquivo, arrastar card no Trello. 
+                        Mouse hover com animação, scroll infinito do TikTok.</li>
+                </ul>
+                <p>Se você juntar o JS + Node.js isso muda mais ainda. Podendo rodar o site no servidor com: login, pagar, 
+                    salvar no banco de dados, mandar email, criar API. É o mesmo JS, só que em outro lugar.</p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <table class="TabelaPadrão">
+                    <caption>Códigos Principais (JS)</caption>
+                    <thead>
+                        <tr>
+                            <th>Tags</th><th>O que é</th><th>Quando/Como usar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>document.getElementById()</code></td>
+                            <td>Pegar um id pra mudar ele</td>
+                            <td>let titulo = document.getElementById('titulo')</td>
+                        </tr>
+                        <tr>
+                            <td><code>document.querySelector()</code></td>
+                            <td>Pega por id, class, tag</td>
+                            <td>let btn = document.querySelector('.btn-dark')</td>
+                        </tr>
+                        <tr>
+                            <td><code>.innerText</code></td>
+                            <td>Mudar texto na tela</td>
+                            <td>titulo.innerText = 'Modo Dark Ativado'</td>
+                        </tr>
+                        <tr>
+                            <td><code>.style.propriedade</code></td>
+                            <td>Mudar cor, sumir, aparecer</td>
+                            <td>body.style.background = '#000'</td>
+                        </tr>
+                        <tr>
+                            <td><code>onclick</code></td>
+                            <td>Fazer algo quando clica</td>
+                            <td>&lt;button onclick="modoDark()"&gt;</td>
+                        </tr>
+                        <tr>
+                            <td><code>classList.toggle()</code></td>
+                            <td>Interruptor</td>
+                            <td>menu.classList.toggle('aberto')</td>
+                        </tr>
+                        <tr>
+                            <td><code>let</code></td>
+                            <td>Caixa pra guardar info</td>
+                            <td>let modoEscuro = false</td>
+                        </tr>
+                        <tr>
+                            <td><code>function</code></td>
+                            <td>Máquina de tarefa</td>
+                            <td>function modoDark(){ ... }</td>
+                        </tr>
+                        <tr>
+                            <td><code>if</code></td>
+                            <td>Se clicou, faz isso</td>
+                            <td>if(modoEscuro === true)</td>
+                        </tr>
+                        <tr>
+                            <td><code>addEventListener</code></td>
+                            <td>Jeito certo do onclick</td>
+                            <td>btn.addEventListener('click', modoDark)</td>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="Texto">
+                <h2>HTML + CSS vs JS</h2>
+                <p>Com esses 10 você faz 90% de qualquer site interativo. Menu mobile, modo dark, 
+                    acordeão, contador. O resto é só juntar esses poderes. Não decora. Usa.</p>
+                <p>No entanto, esse é um dos maiores problemas. Para você usar, você tem que saber usar. 
+                    Enquanto o HTML e o CSS são intuitivos. O JS não, se você não sabe nada de JS, você não vai saber usar 
+                    esses comandos. Por isso que essa página é maior do que as outras, pois nela eu estarei explicando como usar 
+                    cada código da tabela.</p>
+                <p>Entende agora o porque do "complexo"? Isso ocorre por causa que com apenas um código é aberto inumeras possibilidades. 
+                    Já no HTML e CSS o código deles é direto: Na tabela diz isso, então ele faz só isso. No JS a tabela diz que ele faz X, 
+                    mas ele pode fazer Y, Z e o alfabeto inteiro.
+                </p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <address>
+            <p>&copy; 2026 WesleyDev</p>
+            <p>
+                <a target="_blank" href="https://github.com/WesleyMarlon" rel="author noopener">GitHub</a>
+            </p>
+        </address>
+    </footer>
+</body>
+</html>
