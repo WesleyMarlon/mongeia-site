@@ -97,6 +97,14 @@ main h3 {
     margin-top: 20px;
 }
 
+main code {
+    background: #e8e8e8;
+    padding: 2px 6px; 
+    border-radius: 3px; 
+    font-family: 'Consolas', 'Monaco', monospace; 
+    font-size: 0.9em;
+}
+
 /* Details */
 details {color: #2ca094; text-align: left; font-size: 18px; line-height: 1.7;}
 details:hover {color: #05a019;}
@@ -143,13 +151,6 @@ background: #25463f;}
 .coluna h1 > code, .coluna h2 > code, 
 .coluna h3 > code {background: #e8e8e8;}
 
-main code {
-  background: #e8e8e8;
-  padding: 2px 6px; 
-  border-radius: 3px; 
-  font-family: 'Consolas', 'Monaco', monospace; 
-  font-size: 0.9em;}
-
 mark code, pre code, .Codigo code {
   background: transparent; padding: 0;}
 
@@ -171,8 +172,6 @@ mark code, pre code, .Codigo code {
 
 .coluna p {line-height: 1.7; margin-bottom: 16px;
   color: #333; font-size: 1rem; text-align: left;}
-
-.coluna strong {display: block; margin: 24px 0 12px 0; font-size: 1.1rem;}
 
 
 /* Classe Codigo */
