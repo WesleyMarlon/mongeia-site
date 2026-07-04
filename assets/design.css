@@ -5,14 +5,13 @@ img {max-width: 100%; height: auto; display: block;}
 /* Fundo Principal ( body ) */
 body {background: #33aca0; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
 
-/* header */
+/* == HEADER == */
 header {background-color: rgba(6, 46, 36, 0.85); backdrop-filter: blur(12px);
 border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 40px; display: flex; justify-content: space-between; 
 align-items: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); position: sticky; top: 0; z-index: 100;}
 header h1 {font-size: 28px; font-weight: 800; letter-spacing: -1px; color: #ffffff;}
 header nav a {color: white; text-decoration: none; font-weight: 500; opacity: 0.8; transition: 0.2s;}
 header nav a:hover {opacity: 1; color: #00ff22;}
-
 
 /* == MAIN == */
 main h1 {font-size: 38px;color: #032e23; margin: 0 auto 20px;text-align: center;line-height: 1.2;max-width: 1200px;}
@@ -83,11 +82,11 @@ caption {text-align: center; font-size: 20px; padding: 12px; background-color: #
 .TabelaNivel tbody tr:nth-child(even) {background-color: #fafafa;}
 .TabelaNivel tbody tr:hover {background-color: #f0f0f0;}
 
-/* footer */
-footer {background-color: #062e24; text-align: center; padding: 40px; margin-top: 0px;
+/* == FOOTER == */
+footer {background-color: #062e24; text-align: center; padding: 20px; margin-top: 0px;
 position: relative; z-index: 10; box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);}
 footer p {margin-bottom: 16px; color: #ffffff;}
-footer .social {display: flex; justify-content: center; gap: 16px;}
+footer .social {display: flex; justify-content: center; gap: 10px;}
 footer a {display: inline-flex; align-items: center; justify-content: center;
 min-width: 48px; min-height: 48px; border-radius: 8px; transition: background-color 0.2s;}
 footer a:hover {background-color: rgba(64, 224, 208, 0.1);}
@@ -96,26 +95,46 @@ footer a:hover img {filter: brightness(0) saturate(100%) invert(67%) sepia(98%)
   saturate(1752%) hue-rotate(86deg) brightness(118%) contrast(119%);}
 
 
-/* MOBILE */
-@media (max-width: 768px) {.ColunaDupla {flex-direction: column; gap: 48px; padding: 0 24px;}
-  .Caixas {grid-template-columns: 1fr;}
-  main {padding: 60px 24px 40px; margin: -40px 16px -20px;}
-  header {padding: 16px 24px;}
-  header h1 {font-size: 22px;}
-  main h1 {font-size: 32px;}
+/* == MOBILE == */
+@media (max-width: 768px) {
+  
+  /* HEADER */
+  header {padding: 12px 16px; flex-direction: column; align-items: flex-start; gap: 12px;}
+  header h1 {font-size: 1.25rem;}
+  header nav {width: 100%}
+  nav ul {gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 4px;}
+  nav ul::-webkit-scrollbar {display: none}
+  header nav a {font-size: 0.875rem; padding: 6px 10px; background: rgba(255,255,255,.08); border-radius: 6px; white-space: nowrap;}
+  header nav a:active {background: rgba(255,255,255,.15)}
 
+  /* TEXT */
+  main {padding: 24px 16px; margin: -12px 12px 0; border-radius: 8px;}
+  main h1 {font-size: 1.625rem; line-height: 1.25; margin-bottom: 16px;}
+  main h2 {font-size: 1.375rem;}
+  main h3 {font-size: 1.125rem;}
+  main p {font-size: 0.9375rem; line-height: 1.65; margin-bottom: 1rem;}
 
-  /* Tabela Mobile */
-  table, .TabelaPadrão {display: block; width: 100%; overflow-x: auto;
-  white-space: nowrap; -webkit-overflow-scrolling: touch; margin: 24px 0;}
-  table th, table td, .TabelaPadrão th, .TabelaPadrão td {padding: 8px 12px; font-size: 14px;}
+  /* CAIXAS */
+  .Modulos {padding: 24px 16px}
+  .Modulos h2 {font-size: 1.5rem; margin-bottom: 24px;}
+  .Caixas {grid-template-columns: 1fr; gap: 12px;}
+  .Caixa {padding: 16px; border-radius: 12px;}
+  .Caixa h3 {font-size: 1.25rem; margin-bottom: 8px;}
+  .Caixa p {font-size: 0.875rem; line-height: 1.5;}
+  .Caixa:active {transform: scale(0.98);}
 
-  /* Bloco não vazar */
-  pre, .Codigo {overflow-x: auto; white-space: pre-wrap; word-wrap: break-word; background: #1e1e1e;
-    color: #d4d4d4; padding: 16px; border-radius: 8px; font-size: 13px; line-height: 1.4; margin: 20px 0;}
+  /* COLUNA DUPLA */
+  .ColunaDupla {flex-direction: column; gap: 24px; padding: 0; margin: 20px 0;}
+  .coluna {width: 100%}
+  .coluna h2 {font-size: 1.375rem; text-align: left;}
+  .coluna h3 {font-size: 1.125rem}
+  .coluna p {font-size: 0.9375rem}
+  .coluna li {font-size: 0.9375rem; margin-bottom: 8px;}
 
-  /* Não quebrar pra fora */
-  code {white-space: pre-wrap; word-break: break-word; background: #e8e8e8;
-    padding: 2px 6px; border-radius: 3px; font-size: 14px;}
-
-  #Codigo {white-space: pre-wrap; word-break: break-word;}}
+  /* EXTRAS */
+  pre, .Codigo {font-size: 12px; padding: 12px; margin: 16px -16px; border-radius: 0;}
+  mark {font-size: 0.8125rem; white-space: normal;}
+  .TabelaPadrão, .TabelaNivel {font-size: 13px; margin: 16px -16px; width: calc(100% + 32px);}
+  
+  footer {padding: 24px 16px}
+  footer a {min-width: 44px; min-height: 44px}}
