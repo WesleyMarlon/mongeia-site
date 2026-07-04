@@ -14,11 +14,9 @@ header nav a {color: white; text-decoration: none; font-weight: 500; opacity: 0.
 header nav a:hover {opacity: 1; color: #00ff22;}
 
 
-main h2 {font-size: 32px; color: #032e23; margin: 0 auto 20px;text-align: center;line-height: 1.2;max-width: 1200px;}
-
-
 /* == MAIN == */
 main h1 {font-size: 38px;color: #032e23; margin: 0 auto 20px;text-align: center;line-height: 1.2;max-width: 1200px;}
+main h2 {font-size: 32px; color: #032e23; margin: 0 auto 20px;text-align: center;line-height: 1.2;max-width: 1200px;}
 main h3 {font-size: 26px; color: #032e23; margin-top: 20px;}
 main p {font-size: 18px;color: #333;line-height: 1.6;max-width: 1100px;margin: 0 auto;margin-bottom: 1.2rem;}
 main code {background: #e8e8e8; padding: 2px 6px; border-radius: 3px; font-family: 'Consolas', 'Monaco', monospace; font-size: 0.9em;}
