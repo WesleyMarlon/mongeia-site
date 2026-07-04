@@ -243,14 +243,50 @@ caption {text-align: center;
 
 
 /* footer */
-footer {background-color: #062e24; text-align: center; 
-  padding: 40px; margin-top: 0px; 
-  position: relative; z-index: 10; 
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);}
+footer {
+  background-color: #062e24; 
+  text-align: center; 
+  padding: 40px; 
+  margin-top: 0px; 
+  position: relative; 
+  z-index: 10; 
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
+}
 
-footer p {margin-bottom: 16px; color: #ffffff;}
-footer a {color: #40E0D0;}
-footer a:hover {color: #00ff22;}
+footer p {
+  margin-bottom: 16px; 
+  color: #ffffff;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* Espaço entre ícones = +pontos acessibilidade */
+}
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px; /* Regra do Lighthouse */
+  min-height: 48px; /* Regra do Lighthouse */
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+footer a:hover {
+  background-color: rgba(64, 224, 208, 0.1);
+}
+
+footer a img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* Deixa SVG branco */
+}
+
+footer a:hover img {
+  filter: brightness(0) saturate(100%) invert(67%) sepia(98%) saturate(1752%) hue-rotate(86deg) brightness(118%) contrast(119%); /* Vira #00ff22 no hover */
+}
 
 /* Link */
 a {color: #2ca094;}
