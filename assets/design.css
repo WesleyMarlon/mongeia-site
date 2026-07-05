@@ -5,7 +5,7 @@ img {max-width: 100%; height: auto; display: block;}
 /* Fundo Principal ( body ) */
 body {background: #33aca0; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
 
-/* == HEADER == */
+/* ==== HEADER ==== */
 header {background-color: rgba(6, 46, 36, 0.85); backdrop-filter: blur(12px);
 border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 40px; display: flex; justify-content: space-between; 
 align-items: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); position: sticky; top: 0; z-index: 100;}
@@ -13,6 +13,18 @@ align-items: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); position: sticky
 header h1 {font-size: 28px; font-weight: 800; letter-spacing: -1px; color: #ffffff;}
 header nav a {color: white; text-decoration: none; font-weight: 500; opacity: 0.8; transition: 0.2s;}
 header nav a:hover {opacity: 1; color: #00ff22;}
+
+/* == MENU == */
+nav li {position: relative}
+#btn-menu {background: none;border: none;color: white;opacity: 0.8;font: inherit;cursor: pointer;padding: 0;}
+#btn-menu:hover {opacity: 1; color: #00ff22;}
+#box-menu {position: absolute;right: 0;top: 100%;margin-top: 8px;background: #164b45;
+border: 1px solid #2a5a57;border-radius: 8px;padding: 12px;min-width: 220px;z-index: 100;}
+
+#box-menu strong {display: block;font-size: 16px;margin: 8px 0 4px;opacity: .7; color: #01e71f;}
+#box-menu strong:first-child {margin-top: 0}
+#box-menu a {display: block;padding: 4px 8px; font-size: 16px;white-space: nowrap;border-radius: 4px;}
+#box-menu a:hover {background: #2a5a57}
 
 
 /* == MAIN == */
