@@ -148,6 +148,11 @@ footer a:hover img {filter: brightness(0) saturate(100%) invert(67%) sepia(98%)
   .coluna p {font-size: 0.9375rem}
   .coluna li {font-size: 0.9375rem; margin-bottom: 8px;}
 
+  /* == MENU == */
+  nav li {position: static}
+  #box-menu {position: fixed;left: 12px;right: 12px;top: auto;margin-top: 8px;width: auto;max-width: none;}
+  #box-menu a {font-size: 0.9375rem;padding: 10px 12px;}
+
   /* == EXTRAS == */
   pre, .Codigo {font-size: 12px; padding: 12px; margin: 16px -16px; border-radius: 0;}
   mark {font-size: 0.8125rem; white-space: normal;}
