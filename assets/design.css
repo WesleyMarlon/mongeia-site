@@ -13,6 +13,7 @@ header h1 {font-size: 28px; font-weight: 800; letter-spacing: -1px; color: #ffff
 header nav a {color: white; text-decoration: none; font-weight: 500; opacity: 0.8; transition: 0.2s;}
 header nav a:hover {opacity: 1; color: #00ff22;}
 
+
 /* == MAIN == */
 main h1 {font-size: 38px;color: #032e23; margin: 0 auto 20px;text-align: center;line-height: 1.2;max-width: 1200px;}
 main h2 {font-size: 32px; color: #032e23; margin: 0 auto 20px;text-align: center;line-height: 1.2;max-width: 1200px;}
