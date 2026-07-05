@@ -19,10 +19,20 @@
         <nav> <!-- Navegação -->
             <ul>
                 <li><a href="/">Inicio</a></li>
-                <li><a href="/pages/frontend">Frontend</a></li>
-                <li><a href="/pages/updates">Backend</a></li>
-                <li><a href="/pages/updates">DBA</a></li>
-                <li><a href="/pages/updates">Menu</a></li>
+                <li>
+                    <button id="btn-menu">Menu</button>
+                    <div id="box-menu" hidden>
+                        <strong>Frontend</strong>
+                        <a href="/pages/navigator/">Navegador</a>
+                        <a href="/pages/updates/">Celular App</a>
+                        <a href="/pages/updates/">PC/Mac App</a>
+                        <a href="/pages/updates/">Jogos</a>
+                        <strong>Backend</strong>
+                        <a href="/pages/updates/">Em reforma</a>
+                        <strong>DBA</strong>
+                        <a href="/pages/updates/">Em reforma</a>
+                    </div>
+                </li>                
             </ul>
         </nav>
     </header>
@@ -111,6 +121,6 @@
         </div>
     </footer>
 
-    <script src="app.js" defer></script>
+    <script src="/app.js" defer></script>
 </body>
 </html>
