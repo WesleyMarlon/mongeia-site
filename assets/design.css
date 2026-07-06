@@ -135,7 +135,6 @@ footer .social {display: flex; justify-content: center; gap: 10px;}
 footer a {display: inline-flex;align-items: center;justify-content: center;min-width: 48px;min-height: 48px;border-radius: 8px;transition: background-color 0.2s;}
 footer a:hover {background-color: rgba(64, 224, 208, 0.1);}
 footer a img {width: 24px; height: 24px; filter: brightness(0) invert(1);}
-footer a:hover img {filter: brightness(0) saturate(100%) invert(67%) sepia(98%) saturate(1752%) hue-rotate(86deg) brightness(118%) contrast(119%);}
 
 /* ==== MOBILE ==== */
 @media (max-width: 768px) {
