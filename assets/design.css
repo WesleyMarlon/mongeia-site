@@ -78,6 +78,9 @@ details:hover {color: var(--accent-hover);}
 pre {background: #1e1e1e;color: #d4d4d4;padding: 16px;border-radius: 8px;overflow-x: auto;
 font-family: 'Consolas', 'Monaco', monospace;font-size: 14px;line-height: 1.5;margin: 20px 0;}
 
+.pagina h3 {font-size: 20px; text-align: center; margin-bottom: 6px;} .pagina p {text-align: center;}
+.pagina strong {background-color: #0c4249; margin-right: 4px; padding: 2px; border-radius: 25%;}
+
 /* == MARK == */
 mark {background-color: #3bff93; color: #000; font-family: 'Consolas', 'Monaco', monospace;
 font-size: 0.9em; font-weight: 600; padding: 2px 6px; border-radius: 4px; white-space: nowrap;
@@ -112,6 +115,8 @@ color: #d4d4d4;font-family: 'Consolas', 'Monaco', monospace;font-size: 14px;line
 
 .Codigo code {background: transparent; color: inherit; padding: 0; font-size: inherit; font-family: inherit;}
 code {background: var(--border); padding: 2px 6px; border-radius: 3px; font-family: 'Consolas', 'Monaco', monospace; font-size: 0.9em;}
+
+.blue {color: #00c8ff;} .red {color: #ff0000;} .yellow {color: #fbff00;} .purple {color: #cc00ff;} .green {color: #33ff00;}
 
 /* TabelaPadrão */
 .TabelaPadrão {width: 70%;border-collapse: collapse;margin: 24px auto;font-size: 14px;color: var(--text);}
