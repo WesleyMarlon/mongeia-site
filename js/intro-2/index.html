@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução - JS (pt.2)</title>
+    <link rel="stylesheet" href="/assets/design.css">
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.mongeia.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.mongeia.apple.png">
+    <meta name="description" content="Aprenda programação de forma rápida e fácil.">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Mongeia</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li>
+                    <button id="btn-menu">Menu</button>
+                    <div id="box-menu" hidden>
+                        <strong>HTML</strong>
+                        <a href="/html/intro">Introdução</a>
+                        <a href="/html/intermediate">Intermediário</a>
+                        <a href="/pages/updates">Avançado</a>
+                        <strong>CSS</strong>
+                        <a href="/css/intro">Introdução</a>
+                        <a href="/pages/updates">Intermediário</a>
+                        <a href="/pages/updates">Avançado</a>
+                        <strong>JS</strong>
+                        <a href="/js/intro">Introdução</a>
+                        <a href="/pages/updates">Intermediário</a>
+                        <a href="/pages/updates">Avançado</a>
+                    </div>
+                </li>
+                <li>
+                    <button id="btn-theme" aria-label="Alternar tema">🌙</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="ColunaDupla">
+            <div class="coluna">
+                <h2>Começo do Começo</h2>
+                <p>No HTML eu ensinei a criar a pasta.html e no CSS eu ensinei a linkar ele na pasta.html. 
+                    Aqui não vai ser diferente e vou ensinar a linkar a sua pasta.js na pasta.html.</p>
+                <p>Tudo que você coloca de conteúdo fica no <code>&lt;body&gt;</code> e a conexão do seu JS com o HTML 
+                    vai estar lá. No começo? Não, no final. Ficando assim:</p>
+                <pre class="Codigo"><code>&lt;!-- O caminho está conectado em forma de "rota" | pasta.html --&gt;
+1   &lt;<span class="green">body</span>&gt;
+2       &lt;<span class="green">script</span> <span class="blue">src</span> = <span class="blue">"/pasta.js" defer</span>&gt;&lt;/<span class="green">script</span>&gt;
+3   &lt;/<span class="green">body</span>&gt;</code></pre>
+
+                <p>Avisando com antecedência que em toda página que você quiser que o JS funcione. Você vai ter que linkar o JS em toda 
+                    página assim como você faz no CSS.</p>
+                <p>No inicio do código é avisa que ele está conectado em forma de rota. Isso significa que a forma do qual as pastas estão 
+                    configuradas são em rota. Para mais informações vá em <a href="/pages/updates"><strong>Regras não ditas (Frontend)</strong></a>.</p>
+            </div>
+
+            <div class="coluna">
+                <h2>Variáveis</h2>
+                <p>O começo é bem simples. Você vai criar duas variáveis. Uma delas vai ser o <code>Menu (btn)</code> e ao clicar nela, 
+                    você fará com que surja uma <br><code>Caixa (box)</code> com o link das páginas.</p>
+<pre class="Codigo"><code>// Começo - A base do código | pasta.js
+1   <span class="red">const</span> <span class="blue">btn</span> = <span class="blue">document</span><span class="purple">.getElementById</span><span class="yellow">(</span><span class="blue">'btn-menu'</span><span class="yellow">)</span>;
+2   <span class="red">const</span> <span class="blue">box</span> = <span class="blue">document</span><span class="purple">.getElementById</span><span class="yellow">(</span><span class="blue">'box-menu'</span><span class="yellow">)</span>;</code></pre>
+            
+                <p>Está vendo esse código? Pois bem. Deu mais trabalho para pintar ele do que programar o Menu. Seguimos. 
+                    São duas variáveis para o JS e para o HTML + CSS:</p>
+                <ul>
+                    <li><strong>btn / box: </strong>Java Script</li>
+                    <li><strong>btn-menu / box-menu: </strong>HTML + CSS</li>
+                </ul>
+                <p>Isso significa que dentro da pasta.js você chama um de btn/box e na pasta.html e na pasta.css você chama de 
+                    btn-menu e box-menu.</p>
+            </div>
+        </section>
+
+        <section class="ColunaDupla">
+            <div class="coluna">
+                <h2>Menu - Abrir/Fechar</h2>
+                <p>O abrir e fechar do menu é tão simples quanto fazer as variáveis.</p>
+<pre class="Codigo"><code>// Começo - A base do código | pasta.js
+1   <span class="red">const</span> <span class="blue">btn</span> = <span class="blue">document</span><span class="purple">.getElementById</span><span class="yellow">(</span><span class="blue">'btn-menu'</span><span class="yellow">)</span>;
+2   <span class="red">const</span> <span class="blue">box</span> = <span class="blue">document</span><span class="purple">.getElementById</span><span class="yellow">(</span><span class="blue">'box-menu'</span><span class="yellow">)</span>;</code></pre>
+            </div>
+
+            <div class="coluna">
+                <h2>Não sei, não pensei em nada</h2>
+            </div>
+        </section>
+
+        <section class="pagina">
+            <h3>Páginas</h3>
+            <p><a href="/js/intro-1/">1</a> <a href="/js/intro-2/"><strong>2</strong></a></p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 WesleyDev</p>
+        <div class="social">
+            <a href="https://github.com/WesleyMarlon" target="_blank" rel="author noopener" aria-label="GitHub do WesleyDev">
+                <img src="/assets/ico/github.svg" alt="" width="24" height="24">
+            </a>
+            <a href="https://vercel.com/mongeia-labs" target="_blank" rel="noopener" aria-label="Projeto na Vercel">
+                <img src="/assets/ico/vercel.svg" alt="" width="24" height="24">
+            </a>
+        </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+</body>
+</html>
