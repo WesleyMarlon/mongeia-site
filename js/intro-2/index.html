@@ -69,8 +69,8 @@
                 <p>O começo é bem simples. Você vai criar duas variáveis. Uma delas vai ser o <code>Menu (btn)</code> e ao clicar nela, 
                     você fará com que surja uma <br><code>Caixa (box)</code> com o link das páginas.</p>
 <pre class="Codigo"><code>// Começo - A base do código | pasta.js
-1   <span class="red">const</span> <span class="blue">btn</span> = <span class="blue">document</span><span class="purple">.getElementById</span><span class="yellow">(</span><span class="blue">'btn-menu'</span><span class="yellow">)</span>;
-2   <span class="red">const</span> <span class="blue">box</span> = <span class="blue">document</span><span class="purple">.getElementById</span><span class="yellow">(</span><span class="blue">'box-menu'</span><span class="yellow">)</span>;</code></pre>
+1   <span class="red">const</span> <span class="blue">btn</span> = <span class="blue">document</span>.<span class="purple">getElementById</span><span class="yellow">(</span><span class="blue">'btn-menu'</span><span class="yellow">)</span>;
+2   <span class="red">const</span> <span class="blue">box</span> = <span class="blue">document</span>.<span class="purple">getElementById</span><span class="yellow">(</span><span class="blue">'box-menu'</span><span class="yellow">)</span>;</code></pre>
             
                 <p>Está vendo esse código? Pois bem. Deu mais trabalho para pintar ele do que programar o Menu. Seguimos. 
                     São duas variáveis para o JS e para o HTML + CSS:</p>
@@ -87,9 +87,19 @@
             <div class="coluna">
                 <h2>Menu - Abrir/Fechar</h2>
                 <p>O abrir e fechar do menu é tão simples quanto fazer as variáveis.</p>
-<pre class="Codigo"><code>// Começo - A base do código | pasta.js
-1   <span class="red">const</span> <span class="blue">btn</span> = <span class="blue">document</span><span class="purple">.getElementById</span><span class="yellow">(</span><span class="blue">'btn-menu'</span><span class="yellow">)</span>;
-2   <span class="red">const</span> <span class="blue">box</span> = <span class="blue">document</span><span class="purple">.getElementById</span><span class="yellow">(</span><span class="blue">'box-menu'</span><span class="yellow">)</span>;</code></pre>
+<pre class="Codigo"><code>// Abrir/Fechar ao clicar no Menu | pasta.js
+1   <span class="blue">btn</span>.<span class="purple">onclick</span> = <span class="yellow">()</span> <span class="red">=></span> <span class="blue">box</span>.<span class="blue">hidden</span> = !<span class="blue">box</span>.<span class="blue">hidden</span></code></pre>
+                <p>Vou explicar parte por parte do começo ao fim:</p>
+                <ul>
+                    <li><mark>btn.onclick</mark> Ao clicar (onclick) com o mause no Menu(btn)</li>
+                    <li><mark>= () =></mark> Após o click vai ser aberto o menu</li>
+                    <li><mark>box.hidden</mark> Aparecendo uma caixa (box.hidden) com os links</li>
+                    <li><mark>= !</mark> Clicando novamente o menu fecha e a caixa some</li>
+                </ul>
+                <p>Essa linha serve para que após o usuário clicar no Menu. Ele vai abrir o menu e vai 
+                    surgir uma caixa. Após clicar novamente no menu a caixa vai sumir.</p>
+                <p>Nessa caixa você pode colocar textos e o recomendado e o que vai ser ensinado nessa aula: Os links. 
+                    A aparência da caixa vai ser feita no CSS.</p>
             </div>
 
             <div class="coluna">
