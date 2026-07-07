@@ -116,7 +116,8 @@ color: #d4d4d4;font-family: 'Consolas', 'Monaco', monospace;font-size: 14px;line
 .Codigo code {background: transparent; color: inherit; padding: 0; font-size: inherit; font-family: inherit;}
 code {background: var(--border); padding: 2px 6px; border-radius: 3px; font-family: 'Consolas', 'Monaco', monospace; font-size: 0.9em;}
 
-.blue {color: #00c8ff;} .red {color: #ff0000;} .yellow {color: #fbff00;} .purple {color: #cc00ff;} .green {color: #33ff00;}
+.blue {color: #00c8ff;} .red {color: #ff0000;} .yellow {color: #fbff00;} .purple {color: #cc00ff;}
+.green {color: #33ff00;} .orange {color: #ff7300;}
 
 /* TabelaPadrão */
 .TabelaPadrão {width: 70%;border-collapse: collapse;margin: 24px auto;font-size: 14px;color: var(--text);}
