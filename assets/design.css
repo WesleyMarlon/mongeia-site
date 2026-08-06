@@ -5,7 +5,7 @@ img {max-width: 100%; height: auto; display: block;}
 /* == Dark Mode == */
 :root {--bg: #ffffff;--bg-header: rgba(6, 46, 36, 0.85);--bg-card: #ffffff;--bg-box: #0f6962;--bg-body: #33aca0;
 --text: #0f172a;--text-header: #ffffff;--text-muted: #475569;--text-invert: #ffffff; --menu: #00d41c;
---accent: #17922b;--accent-hover: #00d41c;--border: #e2e8f0;--shadow: rgba(0, 0, 0, 0.15);
+--accent: #115f1e;--accent-hover: #4caf50;--border: #e2e8f0;--shadow: rgba(0, 0, 0, 0.15);
 --bg-caixa: #1e3a34;--bg-caixa-hover: #25463f; --bg-footer: #062e24; --caption: #0c493f;}
 
 [data-theme="dark"] {--bg: #0f172a;--bg-header: rgba(2, 6, 23, 0.85);--bg-card: #1e293b;--bg-box: #134e4a;
